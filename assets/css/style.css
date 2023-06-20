@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Poppins:wght@100&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: linear-gradient( #628e75,#1a4855);
+    --fonts: "Poppins", sans-serif;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body{
+    font-family: var(--fonts);
+    background: var(--background);
+    background-position: center;
+    padding: 5px;
+    margin: 60px;
+    color: #f9f9f9;
+    font-size: 20px;
+    line-height: 190%; 
+}
+
+html{
+    overflow: hidden;
+}
+
+container{
+   
+}
+
+//header
+
+.c .img{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+nav {
+    position:absolute;
+    top: 80px;
+    right: 200px
+}
+
+nav li{
+    display: inline;
+    cursour: point;
+}
+
+main{
+  padding: 20px;
+  margin: auto;
+
+  display: grid;
+  grid-template-areas: "intro ilust";
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.intro{
+    display: grid;
+    grid-area: intro;
+    font-family: var(--fonts);
+
+}
+
+.intro h3{
+    font-family: var(--fonts);
+    display: flex;
+    top: 100px;
+    width: 445px;
+    Hug: (30px);
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+.h1{
+    font-family: var(--fonts);
+    display: flex;
+
+    width: 445px;
+    height: 148px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 109%;
+} 
+
+.blockquote{
+    display: flex;
+    height: 400px;
+    left: 300px;
+    top: 500px;
+    
+    font-family:  var(--fonts);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%; 
+}
+
+
+
+.btn-1{
+
+
+    top: 180px;
+    right: 200px
+    position: relative;
+    background: transparent;
+    border: 4px solid #658e76;
+    padding: 16px 40px;
+    text-transform: uppercase;
+   /*responsável por inclinar o botão*/
+    transform: skew(-24deg);
+
+    background: #658E76;
+    color: #f9f9f9
+    display: inline;
+}
+
+.btn-2{
+
+    bottom: 135px;
+    left: 250px;
+    position: relative;
+    background: transparent;
+    border: 4px solid #658e76;
+    padding: 16px 40px;
+    text-transform: uppercase;
+    /*responsável por inclinar o botão*/
+    transform: skew(-24deg);
+    border: 2px solid #658E76;
+    color: #f9f9f9
+    display: inline;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #658e76;
+}
+
+p, {
+    /*responsável por desinclinar o texto*/
+    transform: skew(24deg);
+    font-weight: 600;
+    color: #f9f9f9;
+
+    
+  }
+  
+
+.ilust{
+    display: grid;
+    grid-area: ilust;
+
+    left: 20px;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transition: transform 1s;
+    transform: translateX(1) scale(0.5);
+}
+
+.ilust:hover{
+    transform: translateX(20px) scale(1.1);
+}
+
